@@ -13,6 +13,8 @@
 .sf-products-details{
     background-color: #3B43FE;
     padding: 30px 55px;
+    display: grid;
+    gap: 25px;
 }
 .products-details-holder{
     background-color: #fff;
@@ -77,6 +79,11 @@
     font-size: 18px;
     font-weight: 400;
 }
+.product-counts input[type=number]::-webkit-inner-spin-button, 
+.product-counts input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 
 .products-mine-details{
     display: grid;
@@ -95,6 +102,32 @@
     color: #FCD439;
 }
 
+.payment-amount-holder{
+    background-color: #fff;
+    border-radius: 10px;
+    display: grid;
+    padding: 20px 15px;
+}
+.payment-amount-holder h3{
+    font-weight: 600;
+    color: #000;
+    font-size: 25px;
+    text-align: center;
+    padding-block:0px 20px;
+}
+.payment-amount-holder tr td{
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
+.payment-amount-holder tr td hr{
+    height: 3px;
+    background: #000;
+}
+.payment-amount-holder .payment-cost-num{
+    font-weight: 700;
+    text-align: end;
+}
 
 @media only screen and (max-width:480px){
     .sf-container{
