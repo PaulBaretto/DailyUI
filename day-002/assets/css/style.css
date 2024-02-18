@@ -6,8 +6,7 @@
 .sf-container{
     display: grid;
     grid-template-columns: 40% 60%;
-    /* padding-inline: 20px; */
-    font-family: "Roboto", sans-serif;
+    --font-family: "Roboto", sans-serif;
 }
 
 .sf-products-details{
@@ -91,7 +90,10 @@
     align-content: start;
     row-gap: 6px;
 }
-.products-mine-details h4{
+.products-mine-details a{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
     font-size: 20px;
     font-weight: 700;
 }
@@ -129,6 +131,106 @@
     text-align: end;
 }
 
+.sf-from-holder{
+    padding: 30px 55px;
+}
+.progress-bar-wrap{
+    position: relative;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.progress-bar-wrap .single-progress-bar{
+    position: relative;
+    width: 98px;
+}
+
+.progress-bar-wrap .progress-num-wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.progress-bar-wrap .progress-num-wrap .prog-num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #e9dfdf;
+    background-color: #9e9e9e5e;
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+.fil-prograss  .progress-num-wrap .prog-num{
+    opacity: 0;
+}
+.progress-bar-wrap .progress-num-wrap .prog-check-icon{
+    position: absolute;
+    top: 1.7px;
+    padding-left: 0.4px;
+    transition: 0.3s ease;
+    transform: scale(0);
+    transform-origin: center;
+}
+.progress-bar-wrap .progress-num-wrap .prog-check-icon i{
+    font-size: 29px;
+    color: #34D824;
+}
+.fil-prograss .progress-num-wrap .prog-check-icon{
+    transform: scale(1);
+}
+.prograss-indicator{
+    position: absolute;
+    top: 24%;
+    width: 222px;
+    height: 6px;
+    right: -200%;
+    border-radius: 4px;
+    background-color: #9e9e9e5e;
+    transform-origin: left;
+}
+.prograss-indicator .prog-dash{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    left: 0;
+    border-radius: inherit;
+    background-color: #0027FC;
+    transition: 0.2s ease;
+}
+.fil-prograss .prograss-indicator .prog-dash{
+    width: 100%;
+}
+.prograss-indicator .prog-dot{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    right: 92%;
+    top: -7px;
+    background-image: url(../images/circle-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s ease;
+    transform: scale(0);
+}
+.fil-prograss .prograss-indicator .prog-dot{
+    transform: scale(1);
+    right: 0;
+}
+.progress-bar-wrap p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #000
+}
+.progress-bar-wrap .fil-prograss p{
+    opacity: 0.6;
+}
 @media only screen and (max-width:480px){
     .sf-container{
         /* grid-template-columns: 100% 100%; */

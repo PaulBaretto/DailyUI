@@ -31,16 +31,16 @@
                             </div>
                             <div class="product-counts">
                                 <button class="incress-btn"><span><i class="fa-solid fa-plus"></i></span></button>
-                                <input type="number"  value="1" class="products-in-cart">
+                                <input type="number"  value="1" class="products-in-cart" max="5" min="1" readonly>
                                 <button class="decress-btn"><span><i class="fa-solid fa-minus"></i></span></button>
                             </div>
                         </div>
                         <div class="products-mine-details">
-                            <h4>Indian Traditional sari</h4>
+                            <a href="#">Indian Traditional sari</a>
                             <p class="ratings">
                                 <span><i class="fa-solid fa-star"></i></span> 4.0 (54 reviwed)
                             </p>
-                            <h4 class="product-cost">$ 100</h4>
+                            <h4 class="product-cost">$ 30</h4>
                         </div>
                     </div>
                     <div class="products-holder">
@@ -50,16 +50,16 @@
                             </div>
                             <div class="product-counts">
                                 <button class="incress-btn"><span><i class="fa-solid fa-plus"></i></span></button>
-                                <input type="number" value="1" class="products-in-cart">
+                                <input type="number" value="1" class="products-in-cart" max="5" readonly>
                                 <button class="decress-btn"><span><i class="fa-solid fa-minus"></i></span></button>
                             </div>
                         </div>
                         <div class="products-mine-details">
-                            <h4>Nirvana Fashion</h4>
+                            <a href="#">Nirvana Fashion</a>
                             <p class="ratings">
                                 <span><i class="fa-solid fa-star"></i></span> 4.0 (54 reviwed)
                             </p>
-                            <h4 class="product-cost">$ 100</h4>
+                            <h4 class="product-cost">$ 45</h4>
                         </div>
                     </div>
                 </div>
@@ -69,29 +69,64 @@
                         <tbody>
                             <tr>
                                 <td>Subtotal</td>
-                                <td class="payment-cost-num">$ 200</td>
+                                <td class="payment-cost-num subtotal">$ 75</td>
                             </tr>
                             <tr>
                                 <td>Shipping Cost</td>
-                                <td class="payment-cost-num">$ 50</td>
+                                <td class="payment-cost-num shippingCost">$ 5</td>
                             </tr>
                             <tr>
                                 <td>Texes</td>
-                                <td class="payment-cost-num">$ 50</td>
+                                <td class="payment-cost-num totalTexes">$ 2</td>
                             </tr>
                             <tr><td colspan="2"><hr></td></tr>
                             <tr>
                                 <td><strong> Total</strong></td>
-                                <td class="payment-cost-num">$ 300</td>
+                                <td class="payment-cost-num totalAmount">$ 82</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="sf-from-holder">test</div>
+            <div class="sf-from-holder">
+                <div class="progress-bar-wrap">
+                    <div class="single-progress-bar customer-info">
+                        <div class="progress-num-wrap">
+                            <span class="prog-num">1</span>
+                            <span class="prog-check-icon"><i class="fa-solid fa-circle-check"></i></span>
+                        </div>
+                        <p>Customer's Info</p>
+                        <span class="prograss-indicator">
+                            <span class="prog-dash"></span>
+                            <span class="prog-dot"></span>
+                        </span>
+                    </div>
+                    <div class="single-progress-bar payment-info">
+                        <div class="progress-num-wrap">
+                            <span class="prog-num">2</span>
+                            <span class="prog-check-icon"><i class="fa-solid fa-circle-check"></i></span>
+                        </div>
+                        <p>Payments</p>
+                        <span class="prograss-indicator">
+                            <span class="prog-dash"></span>
+                            <span class="prog-dot"></span>
+                        </span>
+                    </div>
+                    <div class="single-progress-bar">
+                        <div class="progress-num-wrap">
+                            <span class="prog-num">3</span>
+                            <span class="prog-check-icon"><i class="fa-solid fa-circle-check"></i></span>
+                        </div>
+                        <p>Checkout</p>
+                    </div>
+                </div>
+                <div class="button-wrap">
+                    <button class="customer-info-btn">Customer Btn</button>
+                    <button class="payment-btn">Payment Btn</button>
+                </div>
+            </div>
         </div>
     </div>
-
     <script src="assets/js/main.js"></script>
 </body>
 </html>
