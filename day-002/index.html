@@ -14,11 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+<!-- sf = step form  -->
     <div class="sf-main">
         <div class="sf-container">
             <div class="sf-products-details">
@@ -89,6 +89,7 @@
                 </div>
             </div>
             <div class="sf-from-holder">
+   
                 <div class="progress-bar-wrap">
                     <div class="single-progress-bar customer-info">
                         <div class="progress-num-wrap">
@@ -120,14 +121,73 @@
                         <p>Checkout</p>
                     </div>
                 </div>
-                <div class="button-wrap">
+                <form action="" class="form">
+                    <fieldset class="fieldset sf-none">
+                        <div class="sf-container-full">
+                            <div class="select_payment_wrap">
+                                <h3 class="form_title">Select a payment method</h3>
+                                <div class="select_payment_btn_wrap">
+                                    <button>
+                                        <span class="icon_wrap"><img src="assets/images/credit-card-icon.png" alt=""></span> 
+                                        <span class="payment_mathod_text">Credit card (Recommended)</span>
+                                    </button>
+                                    <button>
+                                        <span class="icon_wrap"><img src="assets/images/time-to-pay-icon.png" alt=""></span> 
+                                        <span class="payment_mathod_text">A buy now, pay later service</span>
+                                    </button>
+                                    <button>
+                                        <span class="icon_wrap"><img src="assets/images/online-payment-with-a-credit-card-icon.png" alt=""></span> 
+                                        <span class="payment_mathod_text">A third party payment system</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset ">
+                        <div class="sf-container-full">
+                            <div class="">
+                                <h3 class="form_title">Card Details</h3>
+                                <div class="card-details-wrap">
+                                    <div class="input-wrap">
+                                        <label for="">Card Number</label>
+                                        <div class="input-holder">
+                                            <span class="card-icon"><i class="fa-solid fa-credit-card"></i></span>
+                                            <input type="number" name="" id="" placeholder="0000 0000 0000 0000" >
+                                        </div>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <label for="">Card Holder Name</label>
+                                        <div class="input-holder">
+                                            <input type="text" name="" id=""  >
+                                        </div>
+                                    </div>
+                                    <div class="sf-flex double_inputs">
+                                        <div class="input-wrap">
+                                            <label for="">Card Holder Name</label>
+                                            <div class="input-holder">
+                                                <input type="text" name="" id=""  >
+                                            </div>
+                                        </div>
+                                        <div class="input-wrap">
+                                            <label for="">Card Holder Name</label>
+                                            <div class="input-holder">
+                                                <input type="text" name="" id=""  >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <!-- <div class="button-wrap">
                     <button class="customer-info-btn">Customer Btn</button>
                     <button class="payment-btn">Payment Btn</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-    <script src="assets/js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
 

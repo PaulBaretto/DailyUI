@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://nuitwebtek.com/wp-content/uploads/2023/10/landing-form-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    font-size: 18px;
+    color: blue;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+    margin-left:7px;
+}
+.form-holder{
+    position: relative;
+    width: 500px;
+    padding:40px 30px;
+    border-radius: 20px;
+    background-color: #ffffff59;
+}
+.form-title h2{
+    font-family: inherit;
+    font-size: 30px;
+    color: #282828;
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+.form-holder form{
+    display: grid;
+    gap: 20px;
+}
+.form input,
+.form textarea{
+    width: inherit;
+    height: 40px;
+    background-color: transparent;
+    border:1.5px solid #282828;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #000000 !important;
+    transition: 0.1s linear;
+    margin:0;
+}
+.form input:focus,
+.form textarea:focus{
+    border-color: #000;
+    background-color:transparent !important;
+}
+.form input::placeholder,
+.form textarea::placeholder{
+    font-family: inherit;
+    font-size: 15px;
+    color: #282828;
+}
+.form textarea{
+    padding-top: 10px;
+    min-height: 100px;
+    resize: none;
+}
+.btn-holder{
+    display: flex;
+    justify-content: end;
+}
+.btn-holder .form-submit{
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    background-color:#282828;
+    border-radius: 15px !important;
+    color: #fff !important;
+    font-size:18px;
+    padding:7px;
+}
+.btn-holder .form-submit:hover,
+.btn-holder .form-submit:focus{
+    background-color: #000 !important;
+}
+
+@media only screen and (max-width:480px){
+    .form-holder{
+        width: 300px;
+        padding: 20px 30px;
+    }
+}

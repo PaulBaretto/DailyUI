@@ -143,6 +143,6 @@ function findElement(selector){
     return document.querySelector(selector)
 }
 // convert to string, not working 
-function toTextContent(selector){
-    return document.querySelector(selector).textContent;
-}
+// function toTextContent(selector){
+//     return document.querySelector(selector).textContent;
+// }

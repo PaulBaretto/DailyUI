@@ -7,13 +7,57 @@
     display: grid;
     grid-template-columns: 40% 60%;
     --font-family: "Roboto", sans-serif;
+    --primery-blue:#3B43FE;
+    --border-color:#e9dfdf;
 }
+
+/* global css  */
+.sf-none{
+    display: none !important;
+}
+.sf-flex{
+    display: flex;
+}
+.sf-grid{
+    display: grid;
+}
+form.form{
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+.fieldset{
+    display: grid;
+    justify-content: center;
+    background: #fcfcfc;
+    width: 500px;
+    margin-inline: auto;
+    padding-block:20px 25px;
+    border: none;
+    /* border: 2px solid #f2f2f2; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.form_title{
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: #000;
+    font-size: 25px;
+    text-align: center;
+    padding-block: 10px 30px;
+}
+.double_inputs .input-wrap .input-holder{
+    width: 100px;
+}
+/* global css end */
 
 .sf-products-details{
     background-color: #3B43FE;
     padding: 30px 55px;
     display: grid;
     gap: 25px;
+    font-family: var(--font-family);
 }
 .products-details-holder{
     background-color: #fff;
@@ -231,6 +275,93 @@
 .progress-bar-wrap .fil-prograss p{
     opacity: 0.6;
 }
+
+/* form css  */
+.select_payment_btn_wrap{
+    display: grid;
+    row-gap: 18px;
+    max-width: 350px;
+}
+.select_payment_btn_wrap button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    column-gap: 10px;
+    transition: 0.2s linear;
+    border:1px solid var(--border-color);
+    border-radius: 10px;
+}
+.select_payment_btn_wrap button:hover,
+.select_payment_btn_wrap button:focus{
+    background-color: #FFD241;
+}
+.select_payment_wrap  .icon_wrap{
+    max-width: 30px;
+    height: auto;
+}
+.select_payment_wrap  .icon_wrap img{
+    width: 100%;
+}
+.select_payment_wrap  .payment_mathod_text{
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 400;
+}
+.card-details-wrap{
+    display: grid;
+    row-gap: 18px;
+}
+.input-wrap{
+    display: grid;
+    row-gap: 6px;
+}
+.input-wrap label{
+    font-family:var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+}
+.input-wrap .input-holder{
+    width: 350px;
+    height: 40px;
+    border: 2px solid #3b41fe8d; 
+    border-radius: 5px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    padding-inline: 5px;
+}
+.input-holder .card-icon{
+    display: inline-block;
+    font-size: 18px;
+    opacity: 0.6;
+}
+.input-wrap .input-holder input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+.input-wrap .input-holder input::placeholder{
+    font-size: 18px;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+.input-wrap .input-holder input::-webkit-outer-spin-button,
+.input-wrap .input-holder input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* form css  end  */
+
 @media only screen and (max-width:480px){
     .sf-container{
         /* grid-template-columns: 100% 100%; */
